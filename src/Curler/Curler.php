@@ -43,8 +43,8 @@ class Curler
 	{
 		if ($anotherCurler instanceof self)
 		{
-			$this->handle = curl_copy_handle($anotherCurler->handle);
-			$this->setOptions($anotherCurler->optionSet);
+			$this->handle = curl_copy_handle($anotherCurler->getHandle());
+			$this->setOptions($anotherCurler->getOptions());
 		}
 		else
 		{
@@ -60,6 +60,16 @@ class Curler
 	public function __destruct()
 	{
 		curl_close($this->handle);
+	}
+
+	/**
+	 *	Returns the cURL handle
+	 *
+	 *	@return resource
+	 */
+	public function getHandle()
+	{
+		return $this->handle;
 	}
 
 	/**
@@ -104,6 +114,17 @@ class Curler
 		}
 		//
 		return $this;
+	}
+
+	/**
+	 *	Gets the cURL options the instance remember you set.
+	 *	This DOES NOT returns them from the handle!
+	 *
+	 *	@return array
+	 */
+	public function getOptions()
+	{
+		return ($e = $this->optionSet);
 	}
 
 	/**
