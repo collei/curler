@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"setOp",
+				"setOptions"
+			],
+			[
+				"curl_c",
+				"curl_copy_handle"
+			],
+			[
 				"opt",
 				"optionsMirror"
 			],
@@ -506,14 +514,6 @@
 			[
 				"searche",
 				"searchetarget"
-			],
-			[
-				"has",
-				"hasMany"
-			],
-			[
-				"letra",
-				"letra_atual"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "src/Curler/Curler.php",
 			"settings":
 			{
-				"buffer_size": 1375,
+				"buffer_size": 2744,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -772,15 +772,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1375,
+						"buffer_size": 2744,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								23,
-								23
+								0,
+								0
 							]
 						],
 						"settings":
@@ -789,7 +789,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 228.0,
+						"translation.y": 9.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
