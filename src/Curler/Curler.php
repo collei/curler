@@ -43,12 +43,12 @@ class Curler
 	{
 		if ($anotherCurler instanceof self)
 		{
-			$this->handle = curl_copy_handle($anotherCurler->getHandle());
+			$this->handle = \curl_copy_handle($anotherCurler->getHandle());
 			$this->setOptions($anotherCurler->getOptions());
 		}
 		else
 		{
-			$this->handle = curl_init();
+			$this->handle = \curl_init();
 		}
 	}
 
@@ -73,6 +73,17 @@ class Curler
 	}
 
 	/**
+	 *	Sets the URL to work upon.
+	 *
+	 *	@param	string	$url
+	 *	@return \Curler\Curler
+	 */
+	public function setUrl(string $url)
+	{
+		return $this->setOption(CURLOPT_URL, $url);
+	}
+
+	/**
 	 *	Sets a cURL option to the handle.
 	 *
 	 *	@param	int		$option
@@ -81,7 +92,7 @@ class Curler
 	 */
 	public function setOption(int $option, $value)
 	{
-		$this->curl_setopt(
+		\curl_setopt(
 			$this->handle,
 			$option,
 			$value
@@ -103,7 +114,7 @@ class Curler
 	 */
 	public function setOptions(array $options)
 	{
-		$this->curl_setopt_array(
+		\curl_setopt_array(
 			$this->handle,
 			$options
 		);
@@ -134,7 +145,7 @@ class Curler
 	 */
 	public function reset()
 	{
-		curl_reset($this->handle);
+		\curl_reset($this->handle);
 		//
 		$this->optionSet = [];
 		//
@@ -148,9 +159,9 @@ class Curler
 	 */
 	public function execute()
 	{
-		$this->result = $this->curl_exec($this->handle);
+		$this->result = \curl_exec($this->handle);
 		//
-		if ($err = curl_error($this->handle))
+		if ($err = \curl_error($this->handle))
 		{
 			$this->errors[] = $err;
 		}

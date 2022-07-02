@@ -1,0 +1,25 @@
+{
+	"name": "collei/curler",
+	"description": "Encapsulates some of php cURL functions.",
+	"keywords": ["collei", "curl", "plat", "php"],
+	"homepage": "https://github.com/collei/curler",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Collei Inc.",
+			"email": "collei@collei.com.br"
+		}
+	],
+	"require": {
+		"php": "^7.4||^8.0"
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"autoload": {
+		"psr-4": {
+			"Curler\\": "src/Curler"
+		}
+	}
+}

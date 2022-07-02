@@ -523,7 +523,16 @@
 			"file": "src/Curler/Curler.php",
 			"settings":
 			{
-				"buffer_size": 2744,
+				"buffer_size": 3254,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 2708,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -571,8 +580,9 @@
 	],
 	"file_history":
 	[
-		"/D/_server/apache/sites/des.php.local/packinst/src/Packinst/Package/GitPackage.php",
+		"/D/_server/apache/sites/des.php.local/packinst/composer.json",
 		"/D/_server/apache/sites/des.php.local/curler/src/Curler/Curler.php",
+		"/D/_server/apache/sites/des.php.local/packinst/src/Packinst/Package/GitPackage.php",
 		"/D/_server/apache/sites/des.php.local/packinst/src/Packinst/Package/GithubPackage.php",
 		"/D/_server/apache/sites/des.php.local/packinst/src/Packinst/Package/PackageManager.php",
 		"/D/_server/apache/sites/des.php.local/packinst/index.php",
@@ -697,8 +707,7 @@
 		"/D/_server/apache/sites/des.php.local/plat/vendor/plugins/endroid/qr-code/src/Endroid/QrCode/Bacon/ErrorCorrectionLevelConverter.php",
 		"/C/Users/ujunio/Downloads/Enum-master/src/AbstractEnum.php",
 		"/C/Users/ujunio/AppData/Local/Temp/Temp1_Enum-master.zip/Enum-master/src/AbstractEnum.php",
-		"/D/_server/apache/sites/des.php.local/plat/vendor/plugins/khanamiryan/php-qrcode-detector-decoder-master/init.php",
-		"/D/_server/apache/sites/des.php.local/plat/vendor/plugins/endroid/qr-code/src/Endroid/QrCode/Builder/Builder.php"
+		"/D/_server/apache/sites/des.php.local/plat/vendor/plugins/khanamiryan/php-qrcode-detector-decoder-master/init.php"
 	],
 	"find":
 	{
@@ -763,7 +772,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -772,15 +781,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2744,
+						"buffer_size": 3254,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								928,
+								928
 							]
 						],
 						"settings":
@@ -789,7 +798,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9.0,
+						"translation.y": 29.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								804,
+								804
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
