@@ -1,13 +1,15 @@
 # Collei Curler
 A wraper class for some of php CURL functions, enabled with basic funcionality.
-Simple to use, and you could even chain their methods:
+Simple to use, and you can even chain their method calls:
 
 ```
+<?php
+
+use Curler\Curler;
+
 $curl = new Curler();
 
-$result = $curl
-	->setUrl('http://...')
-	->setOptions([
+$result = $curl->setUrl('http://...')->setOptions([
 		CURLOPT_RETURNTRANSFER => 1,
 		CURLOPT_FOLLOWLOCATION => 1,
 		CURLOPT_USERAGENT => 'My user agent',
@@ -20,7 +22,7 @@ if (!$result)
 
 ```
 
-No `curl_close()` needed - it gets called on Curler's `__descruct()` method.
+No `curl_close()` needed - it gets called on Curler's `__destruct()` method.
 
 ##Current Features
 * `setURL()` method
